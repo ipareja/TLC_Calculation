@@ -1,0 +1,94 @@
+\hypertarget{_t_l_c___calculation_dlg_8h_source}{}\doxysection{TLC\+\_\+\+Calculation\+Dlg.\+h}
+\mbox{\hyperlink{_t_l_c___calculation_dlg_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{comment}{// TLC\_CalculationDlg.h : header file}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{comment}{// CTLC\_CalculationDlg dialog}}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_t_l_c___calculation_dlg}{CTLC\_CalculationDlg}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{comment}{// Construction}}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ae4e4c5117b038c79cc27ade1c7e2613c}{CTLC\_CalculationDlg}}(CWnd* pParent = \textcolor{keyword}{nullptr});    \textcolor{comment}{// standard constructor}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{// Dialog Data}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{17     \textcolor{keyword}{enum} \{ IDD = \mbox{\hyperlink{_resource_8h_ac031de1ea6831d24cad72210cdced7b7}{IDD\_TLC\_CALCULATION\_DIALOG}} \};}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_aca88b04f8dbac00e1b9612a559d54684}{DoDataExchange}}(CDataExchange* pDX);  \textcolor{comment}{// DDX/DDV support}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{comment}{// Implementation}}
+\DoxyCodeLine{25 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{26     HICON \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ac8d59c463664e35b46598bf03a65c2b7}{m\_hIcon}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{comment}{// Generated message map functions}}
+\DoxyCodeLine{29     \textcolor{keyword}{virtual} BOOL \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a1da305ce1bc0ce798a064450cb5ef225}{OnInitDialog}}();}
+\DoxyCodeLine{30     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ade7a1a20ef4a1bcd2bd924b421bebc36}{OnSysCommand}}(UINT nID, LPARAM lParam);}
+\DoxyCodeLine{31     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a9ef942328e8d712dbeaff0ce25d330e2}{OnPaint}}();}
+\DoxyCodeLine{32     afx\_msg HCURSOR \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a3bc977794c4d0c3801f8e37a007cf78a}{OnQueryDragIcon}}();}
+\DoxyCodeLine{33     DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{comment}{//TLC}}
+\DoxyCodeLine{36     \textcolor{comment}{//The units of mesurements used are:"{}}}
+\DoxyCodeLine{37         \textcolor{comment}{//Length    meter (m)"{}}}
+\DoxyCodeLine{38         \textcolor{comment}{//Time      second (s)"{}}}
+\DoxyCodeLine{39         \textcolor{comment}{//Speed     meter per second (m/s)"{}}}
+\DoxyCodeLine{40         \textcolor{comment}{//Rotation  radian (rad)"{}}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{comment}{//Static vehicle data}}
+\DoxyCodeLine{43     double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a2ac844330b122bf9b1a0715cbef342f3}{W\_v}} = 1.8;}
+\DoxyCodeLine{44     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a995a258e397ef9cbf9a6182ee966f98f}{L\_v}} = 4.0;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{comment}{//Dynamic vehicle data}}
+\DoxyCodeLine{47     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_abf2dc0e439d1155c9488285b7bdb69c6}{v}} = 25.0;}
+\DoxyCodeLine{48     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a26828127208cf5610631b1c1746d80ce}{v\_prev}} = 24.9;}
+\DoxyCodeLine{49     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a894163573802e825e590f7f403771f0d}{Y\_v}} = 0.2;}
+\DoxyCodeLine{50     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a39fe23e3359e2c69c066a77259d9cb63}{alpha\_v}} = 0.0051;}
+\DoxyCodeLine{51     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a78e96bed34a086d48f67dbc85076ec71}{alpha\_v\_prev}} = 0.0052;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{comment}{//Dynamic road data}}
+\DoxyCodeLine{54     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a61c2f37d4aa958f6b0295c130c8014dd}{L\_w}} = 3.5;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a8097de28260bc0cc710982ad2ae8f4c1}{alpha\_r}} = 0.0201;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a325bade44df9097af74cce157b01d619}{alpha\_r\_prev}} = 0.0204;}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{comment}{//Time data}}
+\DoxyCodeLine{59     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a7703221758794b01f1330a3944a200fc}{delta\_t}} = 0.017;\textcolor{comment}{// time elapsed between the current and the previous frame}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{comment}{//Calculated static vehicle data}}
+\DoxyCodeLine{62     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a81810c445f41adc3c8cee005f4c1320f}{sd\_v}};}
+\DoxyCodeLine{63     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_af8114566954bfd5827057a846c25c205}{gamma}};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{comment}{//Common calculated dynamic data}}
+\DoxyCodeLine{66     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a744893d06b90565c7f2a2667840f39ec}{beta}};}
+\DoxyCodeLine{67     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ac290c36cf3bd6a24f9f589d735b6a7ac}{beta\_prev}};}
+\DoxyCodeLine{68     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ad621b49c9be431b0d6f73d91f076c454}{v\_prime}};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a15dac73816c26d6e244bdd63e45505f4}{beta\_prime}};}
+\DoxyCodeLine{70     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ac7e92ca467432d3a0694bb5e5b6e906c}{Y\_e}};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{comment}{//Side-\/related calculated dynamic data}}
+\DoxyCodeLine{73     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_addba69a9a61c4d42c262172daf333471}{Y\_v\_prime}};}
+\DoxyCodeLine{74     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a183fb8b47602ad7f12d61207344c1c19}{v\_l}};}
+\DoxyCodeLine{75     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_aea5b29a400c867df6cbb8d226cf25d8e}{v\_l\_prime}};}
+\DoxyCodeLine{76     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a83983c0769e103514dc2497746a83a63}{Y}};}
+\DoxyCodeLine{77     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a522a8dbb6299aeaced83949faec7eedb}{TLC\_left}};}
+\DoxyCodeLine{78     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a52bf0ff114c8c5756fc18681376de109}{TLC\_right}};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a56f72dd7f7f497152f8a8c5079e121bc}{CalculateTLC}}();}
+\DoxyCodeLine{81     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_af94158c11ffa064fecbc0e1fdff16ea0}{OnBnClickedButtonCopyv}}();}
+\DoxyCodeLine{82     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a4d4f9a9c0a63a373b346c57238ace70d}{OnBnClickedButtonCopyalphav}}();}
+\DoxyCodeLine{83     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a2107839b428f3e59fa65ea046ab4a06c}{OnBnClickedButtonCopyalphar}}();}
+\DoxyCodeLine{84     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a28a590d0ff7e69ef3b873973b9fd445a}{OnBnClickedButtonCopyall}}();}
+\DoxyCodeLine{85     afx\_msg \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a6fc599e85c22b93fd2f65b60314c4cfb}{OnEnKillFocus}}(UINT ID);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{comment}{//END TLC}}
+\DoxyCodeLine{88     }
+\DoxyCodeLine{89 \};}
+
+\end{DoxyCode}

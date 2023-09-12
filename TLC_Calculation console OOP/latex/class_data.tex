@@ -1,0 +1,459 @@
+\hypertarget{class_data}{}\doxysection{Data Class Reference}
+\label{class_data}\index{Data@{Data}}
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_af11f741cb7f587e2e495452a8905a22a}{Data}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor\+: assign example values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a90791e58a605d24005302b091473f3a2}{show\+Static\+Vehicle\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Show static vehicle data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_aa774da94306e6bbc51b4f03bd7f11308}{show\+Dynamic\+Vehicle\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Show dynamic vehicle data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a9f6d0f16da39c348d07be2becb0966c4}{show\+Dynamic\+Road\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Show dynamic road data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a4b571bba0aebd1567b5aaf6c1fe1461d}{show\+Time\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Show time data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a896425927244e809a7e25f0316114377}{show\+TLC}} ()
+\begin{DoxyCompactList}\small\item\em Show TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_abb495795b533e01216d7f9ec822b48a3}{show\+TLCAnd\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Show TLC\+\_\+left, TLC\+\_\+right and all data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a51e48a96ec2d5f700c80addc0ef8199d}{modify\+Static\+Vehicle\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Modify static vehicle data and calculate TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a969f1088fa1650b9819e268a0d408309}{modify\+Dynamic\+Vehicle\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Modify dynamic vehicle data and calculate TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_abebcc9c480c8daaec8c9b5a6dfa933ad}{modify\+Dynamic\+Road\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Modify dynamic road data and calculate TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a5e4cc6cc9324593bacd8f0f97ab3f1cf}{modify\+Time\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Modify time data and calculate TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a32cd99766b059b3975c93bb85fc732fc}{calculate\+TLC}} ()
+\begin{DoxyCompactList}\small\item\em Calculate TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_data_afa4c1e2752ed563c6389086c8259d26d}{W\+\_\+v}}
+\begin{DoxyCompactList}\small\item\em vehicle width \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a5c2f56e82fccb1fa779fcf5fc3c529a8}{L\+\_\+v}}
+\begin{DoxyCompactList}\small\item\em vehicle length \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_aa198121456785da43cbc0e1aef635af1}{v}}
+\begin{DoxyCompactList}\small\item\em speed of the vehicle \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_afdd621f6b830883bd0dc687f9eb485ed}{v\+\_\+prev}}
+\begin{DoxyCompactList}\small\item\em speed of the vehicle in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_aadaf38a897c7b5da1abe19f475e145c3}{Y\+\_\+v}}
+\begin{DoxyCompactList}\small\item\em position of the centre of the vehicle regarding the central axis of the lane \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a803036af0a5fff9f2097bf259d6e0a3e}{alpha\+\_\+v}}
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the vehicle around the vertical axis \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a5950aff5e64f1a5b636d198806fdfbde}{alpha\+\_\+v\+\_\+prev}}
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the vehicle around the vertical axis in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a574148102834bd8a8f90ae677dfb7086}{L\+\_\+w}}
+\begin{DoxyCompactList}\small\item\em lane width \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a6b12330b90846d2b7fee009dc45e2976}{alpha\+\_\+r}}
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the road around the vertical axis \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a019a529cb497f8d45e3e96990de9c5ab}{alpha\+\_\+r\+\_\+prev}}
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the road around the vertical axis in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a41f4165a079073a42fe7f4f1f62d0bab}{delta\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em time elapsed between the current and the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a44a0843e7708394a0af0d431fca34442}{sd\+\_\+v}}
+\begin{DoxyCompactList}\small\item\em length of the semi-\/diagonal of the vehicle \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_ae2bfa396aec46d25652ad46b68d9decf}{gamma}}
+\begin{DoxyCompactList}\small\item\em angle between the longitudinal axis of the vehicle and the semi-\/diagonal \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_ac6c5c4153fd72ab982fe3da6933cc511}{beta}}
+\begin{DoxyCompactList}\small\item\em angle beta \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_ae0c6d83f652ebea70fec44301d3582d7}{beta\+\_\+prev}}
+\begin{DoxyCompactList}\small\item\em angle beta in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_aedeceef0a517e9d154ebc120a9064d07}{v\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em projected speed after one second \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a19c5edec7ccc93299a2ab7bf41ef13ff}{beta\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em projected angle beta after one second \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a5c7cf68ce9f5d88d1878f40f12506044}{Y\+\_\+e}}
+\begin{DoxyCompactList}\small\item\em relative position of the front edge of the vehicle to the central axis of the lane \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a3ec69da9d0bcdc38dd9efb8fd4943ff9}{Y\+\_\+v\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em relative position of the front edge of the vehicle to the line t \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_aa62d26f652f0898c445d794a283e77c3}{v\+\_\+l}}
+\begin{DoxyCompactList}\small\item\em lateral speed \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a1d67c7f8f78fc6f97d18824d6d5c61ba}{v\+\_\+l\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em projected lateral speed after one second \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a160b350935bcd17b1d0c1429dd25042a}{Y}}
+\begin{DoxyCompactList}\small\item\em lateral distance between the front edge of the vehicle and the lane boundary \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_abe23900cd4358b9d51e759d0733a9808}{TLC\+\_\+left}}
+\begin{DoxyCompactList}\small\item\em time to line crossing (left) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_data_a144851e3bcdaa959ba5848b35c25e449}{TLC\+\_\+right}}
+\begin{DoxyCompactList}\small\item\em time to line crossing (right) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_af11f741cb7f587e2e495452a8905a22a}\label{class_data_af11f741cb7f587e2e495452a8905a22a}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor\+: assign example values. 
+
+Default constructor\+: assign example values. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_a32cd99766b059b3975c93bb85fc732fc}\label{class_data_a32cd99766b059b3975c93bb85fc732fc}} 
+\index{Data@{Data}!calculateTLC@{calculateTLC}}
+\index{calculateTLC@{calculateTLC}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{calculateTLC()}{calculateTLC()}}
+{\footnotesize\ttfamily void Data\+::calculate\+TLC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculate TLC\+\_\+left and TLC\+\_\+right. 
+
+Method to calculate TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_data_abebcc9c480c8daaec8c9b5a6dfa933ad}\label{class_data_abebcc9c480c8daaec8c9b5a6dfa933ad}} 
+\index{Data@{Data}!modifyDynamicRoadData@{modifyDynamicRoadData}}
+\index{modifyDynamicRoadData@{modifyDynamicRoadData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{modifyDynamicRoadData()}{modifyDynamicRoadData()}}
+{\footnotesize\ttfamily void Data\+::modify\+Dynamic\+Road\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modify dynamic road data and calculate TLC\+\_\+left and TLC\+\_\+right. 
+
+Method to modify dynamic road data and calculate TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_data_a969f1088fa1650b9819e268a0d408309}\label{class_data_a969f1088fa1650b9819e268a0d408309}} 
+\index{Data@{Data}!modifyDynamicVehicleData@{modifyDynamicVehicleData}}
+\index{modifyDynamicVehicleData@{modifyDynamicVehicleData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{modifyDynamicVehicleData()}{modifyDynamicVehicleData()}}
+{\footnotesize\ttfamily void Data\+::modify\+Dynamic\+Vehicle\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modify dynamic vehicle data and calculate TLC\+\_\+left and TLC\+\_\+right. 
+
+Method to modify dynamic vehicle data and calculate TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_data_a51e48a96ec2d5f700c80addc0ef8199d}\label{class_data_a51e48a96ec2d5f700c80addc0ef8199d}} 
+\index{Data@{Data}!modifyStaticVehicleData@{modifyStaticVehicleData}}
+\index{modifyStaticVehicleData@{modifyStaticVehicleData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{modifyStaticVehicleData()}{modifyStaticVehicleData()}}
+{\footnotesize\ttfamily void Data\+::modify\+Static\+Vehicle\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modify static vehicle data and calculate TLC\+\_\+left and TLC\+\_\+right. 
+
+Method to modify static vehicle data and calculate TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_data_a5e4cc6cc9324593bacd8f0f97ab3f1cf}\label{class_data_a5e4cc6cc9324593bacd8f0f97ab3f1cf}} 
+\index{Data@{Data}!modifyTimeData@{modifyTimeData}}
+\index{modifyTimeData@{modifyTimeData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{modifyTimeData()}{modifyTimeData()}}
+{\footnotesize\ttfamily void Data\+::modify\+Time\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modify time data and calculate TLC\+\_\+left and TLC\+\_\+right. 
+
+Method to modify time data and calculate TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_data_a9f6d0f16da39c348d07be2becb0966c4}\label{class_data_a9f6d0f16da39c348d07be2becb0966c4}} 
+\index{Data@{Data}!showDynamicRoadData@{showDynamicRoadData}}
+\index{showDynamicRoadData@{showDynamicRoadData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{showDynamicRoadData()}{showDynamicRoadData()}}
+{\footnotesize\ttfamily void Data\+::show\+Dynamic\+Road\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show dynamic road data. 
+
+Method to show dynamic road data. \mbox{\Hypertarget{class_data_aa774da94306e6bbc51b4f03bd7f11308}\label{class_data_aa774da94306e6bbc51b4f03bd7f11308}} 
+\index{Data@{Data}!showDynamicVehicleData@{showDynamicVehicleData}}
+\index{showDynamicVehicleData@{showDynamicVehicleData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{showDynamicVehicleData()}{showDynamicVehicleData()}}
+{\footnotesize\ttfamily void Data\+::show\+Dynamic\+Vehicle\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show dynamic vehicle data. 
+
+Method to show dynamic vehicle data. \mbox{\Hypertarget{class_data_a90791e58a605d24005302b091473f3a2}\label{class_data_a90791e58a605d24005302b091473f3a2}} 
+\index{Data@{Data}!showStaticVehicleData@{showStaticVehicleData}}
+\index{showStaticVehicleData@{showStaticVehicleData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{showStaticVehicleData()}{showStaticVehicleData()}}
+{\footnotesize\ttfamily void Data\+::show\+Static\+Vehicle\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show static vehicle data. 
+
+Method to show static vehicle data. \mbox{\Hypertarget{class_data_a4b571bba0aebd1567b5aaf6c1fe1461d}\label{class_data_a4b571bba0aebd1567b5aaf6c1fe1461d}} 
+\index{Data@{Data}!showTimeData@{showTimeData}}
+\index{showTimeData@{showTimeData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{showTimeData()}{showTimeData()}}
+{\footnotesize\ttfamily void Data\+::show\+Time\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show time data. 
+
+Method to show time data. \mbox{\Hypertarget{class_data_a896425927244e809a7e25f0316114377}\label{class_data_a896425927244e809a7e25f0316114377}} 
+\index{Data@{Data}!showTLC@{showTLC}}
+\index{showTLC@{showTLC}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{showTLC()}{showTLC()}}
+{\footnotesize\ttfamily void Data\+::show\+TLC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show TLC\+\_\+left and TLC\+\_\+right. 
+
+Method to show TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_data_abb495795b533e01216d7f9ec822b48a3}\label{class_data_abb495795b533e01216d7f9ec822b48a3}} 
+\index{Data@{Data}!showTLCAndData@{showTLCAndData}}
+\index{showTLCAndData@{showTLCAndData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{showTLCAndData()}{showTLCAndData()}}
+{\footnotesize\ttfamily void Data\+::show\+TLCAnd\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show TLC\+\_\+left, TLC\+\_\+right and all data. 
+
+Method to show TLC\+\_\+left, TLC\+\_\+right and all data. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_data_a6b12330b90846d2b7fee009dc45e2976}\label{class_data_a6b12330b90846d2b7fee009dc45e2976}} 
+\index{Data@{Data}!alpha\_r@{alpha\_r}}
+\index{alpha\_r@{alpha\_r}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{alpha\_r}{alpha\_r}}
+{\footnotesize\ttfamily double Data\+::alpha\+\_\+r\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+rotation of the tangent of the road around the vertical axis 
+
+\mbox{\Hypertarget{class_data_a019a529cb497f8d45e3e96990de9c5ab}\label{class_data_a019a529cb497f8d45e3e96990de9c5ab}} 
+\index{Data@{Data}!alpha\_r\_prev@{alpha\_r\_prev}}
+\index{alpha\_r\_prev@{alpha\_r\_prev}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{alpha\_r\_prev}{alpha\_r\_prev}}
+{\footnotesize\ttfamily double Data\+::alpha\+\_\+r\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+rotation of the tangent of the road around the vertical axis in the previous frame 
+
+\mbox{\Hypertarget{class_data_a803036af0a5fff9f2097bf259d6e0a3e}\label{class_data_a803036af0a5fff9f2097bf259d6e0a3e}} 
+\index{Data@{Data}!alpha\_v@{alpha\_v}}
+\index{alpha\_v@{alpha\_v}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{alpha\_v}{alpha\_v}}
+{\footnotesize\ttfamily double Data\+::alpha\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+rotation of the tangent of the vehicle around the vertical axis 
+
+\mbox{\Hypertarget{class_data_a5950aff5e64f1a5b636d198806fdfbde}\label{class_data_a5950aff5e64f1a5b636d198806fdfbde}} 
+\index{Data@{Data}!alpha\_v\_prev@{alpha\_v\_prev}}
+\index{alpha\_v\_prev@{alpha\_v\_prev}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{alpha\_v\_prev}{alpha\_v\_prev}}
+{\footnotesize\ttfamily double Data\+::alpha\+\_\+v\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+rotation of the tangent of the vehicle around the vertical axis in the previous frame 
+
+\mbox{\Hypertarget{class_data_ac6c5c4153fd72ab982fe3da6933cc511}\label{class_data_ac6c5c4153fd72ab982fe3da6933cc511}} 
+\index{Data@{Data}!beta@{beta}}
+\index{beta@{beta}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{beta}{beta}}
+{\footnotesize\ttfamily double Data\+::beta\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+angle beta 
+
+\mbox{\Hypertarget{class_data_ae0c6d83f652ebea70fec44301d3582d7}\label{class_data_ae0c6d83f652ebea70fec44301d3582d7}} 
+\index{Data@{Data}!beta\_prev@{beta\_prev}}
+\index{beta\_prev@{beta\_prev}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{beta\_prev}{beta\_prev}}
+{\footnotesize\ttfamily double Data\+::beta\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+angle beta in the previous frame 
+
+\mbox{\Hypertarget{class_data_a19c5edec7ccc93299a2ab7bf41ef13ff}\label{class_data_a19c5edec7ccc93299a2ab7bf41ef13ff}} 
+\index{Data@{Data}!beta\_prime@{beta\_prime}}
+\index{beta\_prime@{beta\_prime}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{beta\_prime}{beta\_prime}}
+{\footnotesize\ttfamily double Data\+::beta\+\_\+prime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+projected angle beta after one second 
+
+\mbox{\Hypertarget{class_data_a41f4165a079073a42fe7f4f1f62d0bab}\label{class_data_a41f4165a079073a42fe7f4f1f62d0bab}} 
+\index{Data@{Data}!delta\_t@{delta\_t}}
+\index{delta\_t@{delta\_t}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{delta\_t}{delta\_t}}
+{\footnotesize\ttfamily double Data\+::delta\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+time elapsed between the current and the previous frame 
+
+\mbox{\Hypertarget{class_data_ae2bfa396aec46d25652ad46b68d9decf}\label{class_data_ae2bfa396aec46d25652ad46b68d9decf}} 
+\index{Data@{Data}!gamma@{gamma}}
+\index{gamma@{gamma}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{gamma}{gamma}}
+{\footnotesize\ttfamily double Data\+::gamma\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+angle between the longitudinal axis of the vehicle and the semi-\/diagonal 
+
+\mbox{\Hypertarget{class_data_a5c2f56e82fccb1fa779fcf5fc3c529a8}\label{class_data_a5c2f56e82fccb1fa779fcf5fc3c529a8}} 
+\index{Data@{Data}!L\_v@{L\_v}}
+\index{L\_v@{L\_v}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{L\_v}{L\_v}}
+{\footnotesize\ttfamily double Data\+::\+L\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+vehicle length 
+
+\mbox{\Hypertarget{class_data_a574148102834bd8a8f90ae677dfb7086}\label{class_data_a574148102834bd8a8f90ae677dfb7086}} 
+\index{Data@{Data}!L\_w@{L\_w}}
+\index{L\_w@{L\_w}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{L\_w}{L\_w}}
+{\footnotesize\ttfamily double Data\+::\+L\+\_\+w\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+lane width 
+
+\mbox{\Hypertarget{class_data_a44a0843e7708394a0af0d431fca34442}\label{class_data_a44a0843e7708394a0af0d431fca34442}} 
+\index{Data@{Data}!sd\_v@{sd\_v}}
+\index{sd\_v@{sd\_v}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{sd\_v}{sd\_v}}
+{\footnotesize\ttfamily double Data\+::sd\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+length of the semi-\/diagonal of the vehicle 
+
+\mbox{\Hypertarget{class_data_abe23900cd4358b9d51e759d0733a9808}\label{class_data_abe23900cd4358b9d51e759d0733a9808}} 
+\index{Data@{Data}!TLC\_left@{TLC\_left}}
+\index{TLC\_left@{TLC\_left}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{TLC\_left}{TLC\_left}}
+{\footnotesize\ttfamily double Data\+::\+TLC\+\_\+left\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+time to line crossing (left) 
+
+\mbox{\Hypertarget{class_data_a144851e3bcdaa959ba5848b35c25e449}\label{class_data_a144851e3bcdaa959ba5848b35c25e449}} 
+\index{Data@{Data}!TLC\_right@{TLC\_right}}
+\index{TLC\_right@{TLC\_right}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{TLC\_right}{TLC\_right}}
+{\footnotesize\ttfamily double Data\+::\+TLC\+\_\+right\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+time to line crossing (right) 
+
+\mbox{\Hypertarget{class_data_aa198121456785da43cbc0e1aef635af1}\label{class_data_aa198121456785da43cbc0e1aef635af1}} 
+\index{Data@{Data}!v@{v}}
+\index{v@{v}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily double Data\+::v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+speed of the vehicle 
+
+\mbox{\Hypertarget{class_data_aa62d26f652f0898c445d794a283e77c3}\label{class_data_aa62d26f652f0898c445d794a283e77c3}} 
+\index{Data@{Data}!v\_l@{v\_l}}
+\index{v\_l@{v\_l}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{v\_l}{v\_l}}
+{\footnotesize\ttfamily double Data\+::v\+\_\+l\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+lateral speed 
+
+\mbox{\Hypertarget{class_data_a1d67c7f8f78fc6f97d18824d6d5c61ba}\label{class_data_a1d67c7f8f78fc6f97d18824d6d5c61ba}} 
+\index{Data@{Data}!v\_l\_prime@{v\_l\_prime}}
+\index{v\_l\_prime@{v\_l\_prime}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{v\_l\_prime}{v\_l\_prime}}
+{\footnotesize\ttfamily double Data\+::v\+\_\+l\+\_\+prime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+projected lateral speed after one second 
+
+\mbox{\Hypertarget{class_data_afdd621f6b830883bd0dc687f9eb485ed}\label{class_data_afdd621f6b830883bd0dc687f9eb485ed}} 
+\index{Data@{Data}!v\_prev@{v\_prev}}
+\index{v\_prev@{v\_prev}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{v\_prev}{v\_prev}}
+{\footnotesize\ttfamily double Data\+::v\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+speed of the vehicle in the previous frame 
+
+\mbox{\Hypertarget{class_data_aedeceef0a517e9d154ebc120a9064d07}\label{class_data_aedeceef0a517e9d154ebc120a9064d07}} 
+\index{Data@{Data}!v\_prime@{v\_prime}}
+\index{v\_prime@{v\_prime}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{v\_prime}{v\_prime}}
+{\footnotesize\ttfamily double Data\+::v\+\_\+prime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+projected speed after one second 
+
+\mbox{\Hypertarget{class_data_afa4c1e2752ed563c6389086c8259d26d}\label{class_data_afa4c1e2752ed563c6389086c8259d26d}} 
+\index{Data@{Data}!W\_v@{W\_v}}
+\index{W\_v@{W\_v}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{W\_v}{W\_v}}
+{\footnotesize\ttfamily double Data\+::\+W\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+vehicle width 
+
+\mbox{\Hypertarget{class_data_a160b350935bcd17b1d0c1429dd25042a}\label{class_data_a160b350935bcd17b1d0c1429dd25042a}} 
+\index{Data@{Data}!Y@{Y}}
+\index{Y@{Y}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily double Data\+::Y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+lateral distance between the front edge of the vehicle and the lane boundary 
+
+\mbox{\Hypertarget{class_data_a5c7cf68ce9f5d88d1878f40f12506044}\label{class_data_a5c7cf68ce9f5d88d1878f40f12506044}} 
+\index{Data@{Data}!Y\_e@{Y\_e}}
+\index{Y\_e@{Y\_e}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Y\_e}{Y\_e}}
+{\footnotesize\ttfamily double Data\+::\+Y\+\_\+e\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+relative position of the front edge of the vehicle to the central axis of the lane 
+
+\mbox{\Hypertarget{class_data_aadaf38a897c7b5da1abe19f475e145c3}\label{class_data_aadaf38a897c7b5da1abe19f475e145c3}} 
+\index{Data@{Data}!Y\_v@{Y\_v}}
+\index{Y\_v@{Y\_v}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Y\_v}{Y\_v}}
+{\footnotesize\ttfamily double Data\+::\+Y\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+position of the centre of the vehicle regarding the central axis of the lane 
+
+\mbox{\Hypertarget{class_data_a3ec69da9d0bcdc38dd9efb8fd4943ff9}\label{class_data_a3ec69da9d0bcdc38dd9efb8fd4943ff9}} 
+\index{Data@{Data}!Y\_v\_prime@{Y\_v\_prime}}
+\index{Y\_v\_prime@{Y\_v\_prime}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Y\_v\_prime}{Y\_v\_prime}}
+{\footnotesize\ttfamily double Data\+::\+Y\+\_\+v\+\_\+prime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+relative position of the front edge of the vehicle to the line t 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{data_8h}{data.\+h}}\item 
+\mbox{\hyperlink{data_8cpp}{data.\+cpp}}\end{DoxyCompactItemize}

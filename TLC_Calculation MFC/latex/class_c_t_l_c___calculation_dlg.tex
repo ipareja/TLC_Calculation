@@ -1,0 +1,448 @@
+\hypertarget{class_c_t_l_c___calculation_dlg}{}\doxysection{CTLC\+\_\+\+Calculation\+Dlg Class Reference}
+\label{class_c_t_l_c___calculation_dlg}\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+
+
+{\ttfamily \#include $<$TLC\+\_\+\+Calculation\+Dlg.\+h$>$}
+
+Inheritance diagram for CTLC\+\_\+\+Calculation\+Dlg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_t_l_c___calculation_dlg}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ae4e4c5117b038c79cc27ade1c7e2613c}{CTLC\+\_\+\+Calculation\+Dlg}} (CWnd $\ast$p\+Parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_aca88b04f8dbac00e1b9612a559d54684}{Do\+Data\+Exchange}} (CData\+Exchange $\ast$p\+DX)
+\item 
+virtual BOOL \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a1da305ce1bc0ce798a064450cb5ef225}{On\+Init\+Dialog}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ade7a1a20ef4a1bcd2bd924b421bebc36}{On\+Sys\+Command}} (UINT n\+ID, LPARAM l\+Param)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a9ef942328e8d712dbeaff0ce25d330e2}{On\+Paint}} ()
+\item 
+afx\+\_\+msg HCURSOR \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a3bc977794c4d0c3801f8e37a007cf78a}{On\+Query\+Drag\+Icon}} ()
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a56f72dd7f7f497152f8a8c5079e121bc}{Calculate\+TLC}} ()
+\begin{DoxyCompactList}\small\item\em Calculate and set TLC\+\_\+left and TLC\+\_\+right. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_af94158c11ffa064fecbc0e1fdff16ea0}{On\+Bn\+Clicked\+Button\+Copyv}} ()
+\begin{DoxyCompactList}\small\item\em Copy v\+\_\+prev to v. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a4d4f9a9c0a63a373b346c57238ace70d}{On\+Bn\+Clicked\+Button\+Copyalphav}} ()
+\begin{DoxyCompactList}\small\item\em Copy alpha\+\_\+v\+\_\+prev to alpha\+\_\+v. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a2107839b428f3e59fa65ea046ab4a06c}{On\+Bn\+Clicked\+Button\+Copyalphar}} ()
+\begin{DoxyCompactList}\small\item\em Copy alpha\+\_\+r\+\_\+prev to alpha\+\_\+r. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a28a590d0ff7e69ef3b873973b9fd445a}{On\+Bn\+Clicked\+Button\+Copyall}} ()
+\begin{DoxyCompactList}\small\item\em Copy v\+\_\+prev to v, alpha\+\_\+v\+\_\+prev to alpha\+\_\+v and alpha\+\_\+r\+\_\+prev to alpha\+\_\+r. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a6fc599e85c22b93fd2f65b60314c4cfb}{On\+En\+Kill\+Focus}} (UINT ID)
+\begin{DoxyCompactList}\small\item\em Calculates TLC\+\_\+left and TLC\+\_\+right when an edit control loses the keyboard focus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+HICON \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ac8d59c463664e35b46598bf03a65c2b7}{m\+\_\+h\+Icon}}
+\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a2ac844330b122bf9b1a0715cbef342f3}{W\+\_\+v}} = 1.\+8
+\begin{DoxyCompactList}\small\item\em vehicle width \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a995a258e397ef9cbf9a6182ee966f98f}{L\+\_\+v}} = 4.\+0
+\begin{DoxyCompactList}\small\item\em vehicle length \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_abf2dc0e439d1155c9488285b7bdb69c6}{v}} = 25.\+0
+\begin{DoxyCompactList}\small\item\em speed of the vehicle \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a26828127208cf5610631b1c1746d80ce}{v\+\_\+prev}} = 24.\+9
+\begin{DoxyCompactList}\small\item\em speed of the vehicle in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a894163573802e825e590f7f403771f0d}{Y\+\_\+v}} = 0.\+2
+\begin{DoxyCompactList}\small\item\em position of the centre of the vehicle regarding the central axis of the lane \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a39fe23e3359e2c69c066a77259d9cb63}{alpha\+\_\+v}} = 0.\+0051
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the vehicle around the vertical axis \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a78e96bed34a086d48f67dbc85076ec71}{alpha\+\_\+v\+\_\+prev}} = 0.\+0052
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the vehicle around the vertical axis in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a61c2f37d4aa958f6b0295c130c8014dd}{L\+\_\+w}} = 3.\+5
+\begin{DoxyCompactList}\small\item\em lane width \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a8097de28260bc0cc710982ad2ae8f4c1}{alpha\+\_\+r}} = 0.\+0201
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the road around the vertical axis \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a325bade44df9097af74cce157b01d619}{alpha\+\_\+r\+\_\+prev}} = 0.\+0204
+\begin{DoxyCompactList}\small\item\em rotation of the tangent of the road around the vertical axis in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a7703221758794b01f1330a3944a200fc}{delta\+\_\+t}} = 0.\+017
+\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a81810c445f41adc3c8cee005f4c1320f}{sd\+\_\+v}}
+\begin{DoxyCompactList}\small\item\em length of the semi-\/diagonal of the vehicle \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_af8114566954bfd5827057a846c25c205}{gamma}}
+\begin{DoxyCompactList}\small\item\em angle between the longitudinal axis of the vehicle and the semi-\/diagonal \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a744893d06b90565c7f2a2667840f39ec}{beta}}
+\begin{DoxyCompactList}\small\item\em angle beta \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ac290c36cf3bd6a24f9f589d735b6a7ac}{beta\+\_\+prev}}
+\begin{DoxyCompactList}\small\item\em angle beta in the previous frame \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ad621b49c9be431b0d6f73d91f076c454}{v\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em projected speed after one second \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a15dac73816c26d6e244bdd63e45505f4}{beta\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em projected angle beta after one second \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_ac7e92ca467432d3a0694bb5e5b6e906c}{Y\+\_\+e}}
+\begin{DoxyCompactList}\small\item\em relative position of the front edge of the vehicle to the central axis of the lane \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_addba69a9a61c4d42c262172daf333471}{Y\+\_\+v\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em relative position of the front edge of the vehicle to the line t \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a183fb8b47602ad7f12d61207344c1c19}{v\+\_\+l}}
+\begin{DoxyCompactList}\small\item\em lateral speed \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_aea5b29a400c867df6cbb8d226cf25d8e}{v\+\_\+l\+\_\+prime}}
+\begin{DoxyCompactList}\small\item\em projected lateral speed after one second \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a83983c0769e103514dc2497746a83a63}{Y}}
+\begin{DoxyCompactList}\small\item\em lateral distance between the front edge of the vehicle and the lane boundary \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a522a8dbb6299aeaced83949faec7eedb}{TLC\+\_\+left}}
+\begin{DoxyCompactList}\small\item\em time to line crossing (left) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_t_l_c___calculation_dlg_a52bf0ff114c8c5756fc18681376de109}{TLC\+\_\+right}}
+\begin{DoxyCompactList}\small\item\em time to line crossing (right) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_ae4e4c5117b038c79cc27ade1c7e2613c}\label{class_c_t_l_c___calculation_dlg_ae4e4c5117b038c79cc27ade1c7e2613c}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{CTLC\_CalculationDlg()}{CTLC\_CalculationDlg()}}
+{\footnotesize\ttfamily CTLC\+\_\+\+Calculation\+Dlg\+::\+CTLC\+\_\+\+Calculation\+Dlg (\begin{DoxyParamCaption}\item[{CWnd $\ast$}]{p\+Parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a56f72dd7f7f497152f8a8c5079e121bc}\label{class_c_t_l_c___calculation_dlg_a56f72dd7f7f497152f8a8c5079e121bc}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!CalculateTLC@{CalculateTLC}}
+\index{CalculateTLC@{CalculateTLC}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{CalculateTLC()}{CalculateTLC()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+Calculate\+TLC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Calculate and set TLC\+\_\+left and TLC\+\_\+right. 
+
+Calculate and set TLC\+\_\+left and TLC\+\_\+right. \mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_aca88b04f8dbac00e1b9612a559d54684}\label{class_c_t_l_c___calculation_dlg_aca88b04f8dbac00e1b9612a559d54684}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{DoDataExchange()}{DoDataExchange()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+Do\+Data\+Exchange (\begin{DoxyParamCaption}\item[{CData\+Exchange $\ast$}]{p\+DX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a28a590d0ff7e69ef3b873973b9fd445a}\label{class_c_t_l_c___calculation_dlg_a28a590d0ff7e69ef3b873973b9fd445a}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnBnClickedButtonCopyall@{OnBnClickedButtonCopyall}}
+\index{OnBnClickedButtonCopyall@{OnBnClickedButtonCopyall}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnBnClickedButtonCopyall()}{OnBnClickedButtonCopyall()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Bn\+Clicked\+Button\+Copyall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy v\+\_\+prev to v, alpha\+\_\+v\+\_\+prev to alpha\+\_\+v and alpha\+\_\+r\+\_\+prev to alpha\+\_\+r. 
+
+Copy v\+\_\+prev to v, alpha\+\_\+v\+\_\+prev to alpha\+\_\+v and alpha\+\_\+r\+\_\+prev to alpha\+\_\+r. \mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a2107839b428f3e59fa65ea046ab4a06c}\label{class_c_t_l_c___calculation_dlg_a2107839b428f3e59fa65ea046ab4a06c}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnBnClickedButtonCopyalphar@{OnBnClickedButtonCopyalphar}}
+\index{OnBnClickedButtonCopyalphar@{OnBnClickedButtonCopyalphar}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnBnClickedButtonCopyalphar()}{OnBnClickedButtonCopyalphar()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Bn\+Clicked\+Button\+Copyalphar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy alpha\+\_\+r\+\_\+prev to alpha\+\_\+r. 
+
+Copy alpha\+\_\+r\+\_\+prev to alpha\+\_\+r. \mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a4d4f9a9c0a63a373b346c57238ace70d}\label{class_c_t_l_c___calculation_dlg_a4d4f9a9c0a63a373b346c57238ace70d}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnBnClickedButtonCopyalphav@{OnBnClickedButtonCopyalphav}}
+\index{OnBnClickedButtonCopyalphav@{OnBnClickedButtonCopyalphav}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnBnClickedButtonCopyalphav()}{OnBnClickedButtonCopyalphav()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Bn\+Clicked\+Button\+Copyalphav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy alpha\+\_\+v\+\_\+prev to alpha\+\_\+v. 
+
+Copy alpha\+\_\+v\+\_\+prev to alpha\+\_\+v. \mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_af94158c11ffa064fecbc0e1fdff16ea0}\label{class_c_t_l_c___calculation_dlg_af94158c11ffa064fecbc0e1fdff16ea0}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnBnClickedButtonCopyv@{OnBnClickedButtonCopyv}}
+\index{OnBnClickedButtonCopyv@{OnBnClickedButtonCopyv}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnBnClickedButtonCopyv()}{OnBnClickedButtonCopyv()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Bn\+Clicked\+Button\+Copyv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy v\+\_\+prev to v. 
+
+Copy v\+\_\+prev to v. \mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a6fc599e85c22b93fd2f65b60314c4cfb}\label{class_c_t_l_c___calculation_dlg_a6fc599e85c22b93fd2f65b60314c4cfb}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnEnKillFocus@{OnEnKillFocus}}
+\index{OnEnKillFocus@{OnEnKillFocus}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnEnKillFocus()}{OnEnKillFocus()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+En\+Kill\+Focus (\begin{DoxyParamCaption}\item[{UINT}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Calculates TLC\+\_\+left and TLC\+\_\+right when an edit control loses the keyboard focus. 
+
+Calculates TLC\+\_\+left and TLC\+\_\+right when an edit control loses the keyboard focus. \mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a1da305ce1bc0ce798a064450cb5ef225}\label{class_c_t_l_c___calculation_dlg_a1da305ce1bc0ce798a064450cb5ef225}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnInitDialog()}{OnInitDialog()}}
+{\footnotesize\ttfamily BOOL CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Init\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a9ef942328e8d712dbeaff0ce25d330e2}\label{class_c_t_l_c___calculation_dlg_a9ef942328e8d712dbeaff0ce25d330e2}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a3bc977794c4d0c3801f8e37a007cf78a}\label{class_c_t_l_c___calculation_dlg_a3bc977794c4d0c3801f8e37a007cf78a}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnQueryDragIcon@{OnQueryDragIcon}}
+\index{OnQueryDragIcon@{OnQueryDragIcon}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnQueryDragIcon()}{OnQueryDragIcon()}}
+{\footnotesize\ttfamily HCURSOR CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Query\+Drag\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_ade7a1a20ef4a1bcd2bd924b421bebc36}\label{class_c_t_l_c___calculation_dlg_ade7a1a20ef4a1bcd2bd924b421bebc36}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!OnSysCommand@{OnSysCommand}}
+\index{OnSysCommand@{OnSysCommand}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{OnSysCommand()}{OnSysCommand()}}
+{\footnotesize\ttfamily void CTLC\+\_\+\+Calculation\+Dlg\+::\+On\+Sys\+Command (\begin{DoxyParamCaption}\item[{UINT}]{n\+ID,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a8097de28260bc0cc710982ad2ae8f4c1}\label{class_c_t_l_c___calculation_dlg_a8097de28260bc0cc710982ad2ae8f4c1}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!alpha\_r@{alpha\_r}}
+\index{alpha\_r@{alpha\_r}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{alpha\_r}{alpha\_r}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::alpha\+\_\+r = 0.\+0201\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+rotation of the tangent of the road around the vertical axis 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a325bade44df9097af74cce157b01d619}\label{class_c_t_l_c___calculation_dlg_a325bade44df9097af74cce157b01d619}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!alpha\_r\_prev@{alpha\_r\_prev}}
+\index{alpha\_r\_prev@{alpha\_r\_prev}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{alpha\_r\_prev}{alpha\_r\_prev}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::alpha\+\_\+r\+\_\+prev = 0.\+0204\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+rotation of the tangent of the road around the vertical axis in the previous frame 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a39fe23e3359e2c69c066a77259d9cb63}\label{class_c_t_l_c___calculation_dlg_a39fe23e3359e2c69c066a77259d9cb63}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!alpha\_v@{alpha\_v}}
+\index{alpha\_v@{alpha\_v}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{alpha\_v}{alpha\_v}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::alpha\+\_\+v = 0.\+0051\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+rotation of the tangent of the vehicle around the vertical axis 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a78e96bed34a086d48f67dbc85076ec71}\label{class_c_t_l_c___calculation_dlg_a78e96bed34a086d48f67dbc85076ec71}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!alpha\_v\_prev@{alpha\_v\_prev}}
+\index{alpha\_v\_prev@{alpha\_v\_prev}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{alpha\_v\_prev}{alpha\_v\_prev}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::alpha\+\_\+v\+\_\+prev = 0.\+0052\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+rotation of the tangent of the vehicle around the vertical axis in the previous frame 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a744893d06b90565c7f2a2667840f39ec}\label{class_c_t_l_c___calculation_dlg_a744893d06b90565c7f2a2667840f39ec}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!beta@{beta}}
+\index{beta@{beta}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{beta}{beta}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::beta\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+angle beta 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_ac290c36cf3bd6a24f9f589d735b6a7ac}\label{class_c_t_l_c___calculation_dlg_ac290c36cf3bd6a24f9f589d735b6a7ac}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!beta\_prev@{beta\_prev}}
+\index{beta\_prev@{beta\_prev}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{beta\_prev}{beta\_prev}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::beta\+\_\+prev\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+angle beta in the previous frame 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a15dac73816c26d6e244bdd63e45505f4}\label{class_c_t_l_c___calculation_dlg_a15dac73816c26d6e244bdd63e45505f4}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!beta\_prime@{beta\_prime}}
+\index{beta\_prime@{beta\_prime}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{beta\_prime}{beta\_prime}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::beta\+\_\+prime\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+projected angle beta after one second 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a7703221758794b01f1330a3944a200fc}\label{class_c_t_l_c___calculation_dlg_a7703221758794b01f1330a3944a200fc}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!delta\_t@{delta\_t}}
+\index{delta\_t@{delta\_t}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{delta\_t}{delta\_t}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::delta\+\_\+t = 0.\+017\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_af8114566954bfd5827057a846c25c205}\label{class_c_t_l_c___calculation_dlg_af8114566954bfd5827057a846c25c205}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!gamma@{gamma}}
+\index{gamma@{gamma}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{gamma}{gamma}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::gamma\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+angle between the longitudinal axis of the vehicle and the semi-\/diagonal 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a995a258e397ef9cbf9a6182ee966f98f}\label{class_c_t_l_c___calculation_dlg_a995a258e397ef9cbf9a6182ee966f98f}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!L\_v@{L\_v}}
+\index{L\_v@{L\_v}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{L\_v}{L\_v}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+L\+\_\+v = 4.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+vehicle length 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a61c2f37d4aa958f6b0295c130c8014dd}\label{class_c_t_l_c___calculation_dlg_a61c2f37d4aa958f6b0295c130c8014dd}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!L\_w@{L\_w}}
+\index{L\_w@{L\_w}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{L\_w}{L\_w}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+L\+\_\+w = 3.\+5\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+lane width 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_ac8d59c463664e35b46598bf03a65c2b7}\label{class_c_t_l_c___calculation_dlg_ac8d59c463664e35b46598bf03a65c2b7}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!m\_hIcon@{m\_hIcon}}
+\index{m\_hIcon@{m\_hIcon}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{m\_hIcon}{m\_hIcon}}
+{\footnotesize\ttfamily HICON CTLC\+\_\+\+Calculation\+Dlg\+::m\+\_\+h\+Icon\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a81810c445f41adc3c8cee005f4c1320f}\label{class_c_t_l_c___calculation_dlg_a81810c445f41adc3c8cee005f4c1320f}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!sd\_v@{sd\_v}}
+\index{sd\_v@{sd\_v}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{sd\_v}{sd\_v}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::sd\+\_\+v\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+length of the semi-\/diagonal of the vehicle 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a522a8dbb6299aeaced83949faec7eedb}\label{class_c_t_l_c___calculation_dlg_a522a8dbb6299aeaced83949faec7eedb}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!TLC\_left@{TLC\_left}}
+\index{TLC\_left@{TLC\_left}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{TLC\_left}{TLC\_left}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+TLC\+\_\+left\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+time to line crossing (left) 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a52bf0ff114c8c5756fc18681376de109}\label{class_c_t_l_c___calculation_dlg_a52bf0ff114c8c5756fc18681376de109}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!TLC\_right@{TLC\_right}}
+\index{TLC\_right@{TLC\_right}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{TLC\_right}{TLC\_right}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+TLC\+\_\+right\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+time to line crossing (right) 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_abf2dc0e439d1155c9488285b7bdb69c6}\label{class_c_t_l_c___calculation_dlg_abf2dc0e439d1155c9488285b7bdb69c6}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!v@{v}}
+\index{v@{v}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::v = 25.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+speed of the vehicle 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a183fb8b47602ad7f12d61207344c1c19}\label{class_c_t_l_c___calculation_dlg_a183fb8b47602ad7f12d61207344c1c19}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!v\_l@{v\_l}}
+\index{v\_l@{v\_l}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{v\_l}{v\_l}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::v\+\_\+l\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+lateral speed 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_aea5b29a400c867df6cbb8d226cf25d8e}\label{class_c_t_l_c___calculation_dlg_aea5b29a400c867df6cbb8d226cf25d8e}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!v\_l\_prime@{v\_l\_prime}}
+\index{v\_l\_prime@{v\_l\_prime}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{v\_l\_prime}{v\_l\_prime}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::v\+\_\+l\+\_\+prime\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+projected lateral speed after one second 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a26828127208cf5610631b1c1746d80ce}\label{class_c_t_l_c___calculation_dlg_a26828127208cf5610631b1c1746d80ce}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!v\_prev@{v\_prev}}
+\index{v\_prev@{v\_prev}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{v\_prev}{v\_prev}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::v\+\_\+prev = 24.\+9\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+speed of the vehicle in the previous frame 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_ad621b49c9be431b0d6f73d91f076c454}\label{class_c_t_l_c___calculation_dlg_ad621b49c9be431b0d6f73d91f076c454}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!v\_prime@{v\_prime}}
+\index{v\_prime@{v\_prime}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{v\_prime}{v\_prime}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::v\+\_\+prime\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+projected speed after one second 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a2ac844330b122bf9b1a0715cbef342f3}\label{class_c_t_l_c___calculation_dlg_a2ac844330b122bf9b1a0715cbef342f3}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!W\_v@{W\_v}}
+\index{W\_v@{W\_v}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{W\_v}{W\_v}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+W\+\_\+v = 1.\+8\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+vehicle width 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a83983c0769e103514dc2497746a83a63}\label{class_c_t_l_c___calculation_dlg_a83983c0769e103514dc2497746a83a63}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!Y@{Y}}
+\index{Y@{Y}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::Y\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+lateral distance between the front edge of the vehicle and the lane boundary 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_ac7e92ca467432d3a0694bb5e5b6e906c}\label{class_c_t_l_c___calculation_dlg_ac7e92ca467432d3a0694bb5e5b6e906c}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!Y\_e@{Y\_e}}
+\index{Y\_e@{Y\_e}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{Y\_e}{Y\_e}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+Y\+\_\+e\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+relative position of the front edge of the vehicle to the central axis of the lane 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_a894163573802e825e590f7f403771f0d}\label{class_c_t_l_c___calculation_dlg_a894163573802e825e590f7f403771f0d}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!Y\_v@{Y\_v}}
+\index{Y\_v@{Y\_v}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{Y\_v}{Y\_v}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+Y\+\_\+v = 0.\+2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+position of the centre of the vehicle regarding the central axis of the lane 
+
+\mbox{\Hypertarget{class_c_t_l_c___calculation_dlg_addba69a9a61c4d42c262172daf333471}\label{class_c_t_l_c___calculation_dlg_addba69a9a61c4d42c262172daf333471}} 
+\index{CTLC\_CalculationDlg@{CTLC\_CalculationDlg}!Y\_v\_prime@{Y\_v\_prime}}
+\index{Y\_v\_prime@{Y\_v\_prime}!CTLC\_CalculationDlg@{CTLC\_CalculationDlg}}
+\doxysubsubsection{\texorpdfstring{Y\_v\_prime}{Y\_v\_prime}}
+{\footnotesize\ttfamily double CTLC\+\_\+\+Calculation\+Dlg\+::\+Y\+\_\+v\+\_\+prime\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+relative position of the front edge of the vehicle to the line t 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_t_l_c___calculation_dlg_8h}{TLC\+\_\+\+Calculation\+Dlg.\+h}}\item 
+\mbox{\hyperlink{_t_l_c___calculation_dlg_8cpp}{TLC\+\_\+\+Calculation\+Dlg.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['idc_5fbutton_5fcopy_5fall_0',['IDC_BUTTON_Copy_all',['../_resource_8h.html#a17d07b99b7cf56e40866b0a2eb76895f',1,'Resource.h']]],
+  ['idc_5fbutton_5fcopy_5falpha_5fr_1',['IDC_BUTTON_Copy_alpha_r',['../_resource_8h.html#a27f639daf4cd91690cf2487b066fdc8e',1,'Resource.h']]],
+  ['idc_5fbutton_5fcopy_5falpha_5fv_2',['IDC_BUTTON_Copy_alpha_v',['../_resource_8h.html#a643379ade52d6a15ebc06b7b3b5382dc',1,'Resource.h']]],
+  ['idc_5fbutton_5fcopy_5fv_3',['IDC_BUTTON_Copy_v',['../_resource_8h.html#afae52be7200ba46545cda39e11256966',1,'Resource.h']]],
+  ['idc_5fedit_5falpha_5fr_4',['IDC_EDIT_alpha_r',['../_resource_8h.html#add3cb8b6a60ae635f5c5886510cf4566',1,'Resource.h']]],
+  ['idc_5fedit_5falpha_5fr_5fprev_5',['IDC_EDIT_alpha_r_prev',['../_resource_8h.html#a7124d90148c9b317d7aea53273a0e20a',1,'Resource.h']]],
+  ['idc_5fedit_5falpha_5fv_6',['IDC_EDIT_alpha_v',['../_resource_8h.html#a6357bae57a94a31b7a878cc780114753',1,'Resource.h']]],
+  ['idc_5fedit_5falpha_5fv_5fprev_7',['IDC_EDIT_alpha_v_prev',['../_resource_8h.html#aaa65ba7f85aa403f3c17e176fef7603f',1,'Resource.h']]],
+  ['idc_5fedit_5fdelta_5ft_8',['IDC_EDIT_delta_t',['../_resource_8h.html#acc50610d58da05d3140e26ee187fb081',1,'Resource.h']]],
+  ['idc_5fedit_5fl_5fv_9',['IDC_EDIT_L_v',['../_resource_8h.html#af00624937acc1abc9a17fcb215c5aa44',1,'Resource.h']]],
+  ['idc_5fedit_5fl_5fw_10',['IDC_EDIT_L_w',['../_resource_8h.html#abb9cb160997c22f0d53b584544dbebf2',1,'Resource.h']]],
+  ['idc_5fedit_5ftlc_5fleft_11',['IDC_EDIT_TLC_left',['../_resource_8h.html#a7f6f2510f43fa5f705e253b2b05e382c',1,'Resource.h']]],
+  ['idc_5fedit_5ftlc_5fright_12',['IDC_EDIT_TLC_right',['../_resource_8h.html#a23c9e0112d8e0f6375369a49225d05fa',1,'Resource.h']]],
+  ['idc_5fedit_5fv_13',['IDC_EDIT_v',['../_resource_8h.html#a4928a516fbcd01080b52b9b5bbd243c3',1,'Resource.h']]],
+  ['idc_5fedit_5fv_5fprev_14',['IDC_EDIT_v_prev',['../_resource_8h.html#a26e0e9cd706f5c1c91dad8156e9b76fb',1,'Resource.h']]],
+  ['idc_5fedit_5fw_5fv_15',['IDC_EDIT_W_v',['../_resource_8h.html#af84bfa388a81cd88339784dc6116a626',1,'Resource.h']]],
+  ['idc_5fedit_5fy_5fv_16',['IDC_EDIT_Y_v',['../_resource_8h.html#a7c2220c510dec6e0640a8e492bf4b020',1,'Resource.h']]],
+  ['idd_5faboutbox_17',['IDD_ABOUTBOX',['../_resource_8h.html#a77a06326b569136edbb6c766bc98c33c',1,'Resource.h']]],
+  ['idd_5ftlc_5fcalculation_5fdialog_18',['IDD_TLC_CALCULATION_DIALOG',['../_resource_8h.html#ac031de1ea6831d24cad72210cdced7b7',1,'Resource.h']]],
+  ['idm_5faboutbox_19',['IDM_ABOUTBOX',['../_resource_8h.html#a74b41adc6435c09e5393739d1ebeace4',1,'Resource.h']]],
+  ['idr_5fmainframe_20',['IDR_MAINFRAME',['../_resource_8h.html#a9772c84d39896ad00b9aeb34b15d324d',1,'Resource.h']]],
+  ['ids_5faboutbox_21',['IDS_ABOUTBOX',['../_resource_8h.html#a912ee15244eed3e0f75c2fc1ef9719eb',1,'Resource.h']]]
+];
